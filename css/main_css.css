@@ -1,0 +1,109 @@
+a:link{color: white;}
+a:visited{color: white;}
+a{text-decoration: none;}
+
+.hover{font-size: 25px; text-align: bottom; cursor: pointer;}
+.cButton{border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 25px; margin: 4px 2px; cursor: pointer;}
+.newButton{background-color: white; white; text-align: center; text-decoration: none; font-size: 25px; cursor: pointer;}
+#home{background-color: #FFFFFF; position: absolute; left: 230px; top: 10px; height: 35px; width: 100px;}
+#home:hover{background-color: #CCCCCC; position: absolute; left: 230px; top: 10px; height: 35px; width: 100px; border-radius: 5px;}
+#games{background-color: #FFFFFF; position: absolute; left: 350px; top: 10px; height: 35px; width: 100px;}
+#games:hover{background-color: #CCCCCC; position: absolute; left: 350px; top: 10px; height: 35px; width: 100px; border-radius: 5px;}
+#blog{background-color: #FFFFFF; position: absolute; left: 470px; top: 10px; height: 35px; width: 100px;}
+#blog:hover{background-color: #CCCCCC; position: absolute; left: 470px; top: 10px; height: 35px; width: 100px; border-radius: 5px;}
+body{background-image: url("http://bloxdev.com/images/back.png"); background-repeat: repeat-x; margin: 0 0 0px; padding: 25px;}
+.semiBlack{background-color: #FFFFFF; opacity: 1;} /*its actually white :P*/
+.verd{color: #191919; font-family: Verdana;}
+#pageSize{height: 1800px;}
+#topbar{width: 100%; height: 50px; position: fixed; left: 0%; top: 5px; z-index: 100}
+#orangeline{width: 102%; height: 5px; left: -1px; top: -0px; position: fixed; background-color: #FAAF42; z-index: 100}
+#littleorangeline{width: 102%; height: 2px; left: -0px; top: 55px; position: fixed; background-color: #FAAF42; z-index: 100;}
+#littlelogo{width: 45px; top: 2px; position: absolute; left: 5px;}
+.topverd{color: #191919; font-family: Verdana; font-size: 1; text-shadow: 1px 1px 3px black;}
+/*#footer{width: 100%; height: 55px; background-color: #FAAF42;}
+.footerc{position: absolute; right: 0; top: pageSize; left: 0; text-align: center;}*/
+#bloxdevlogoname{left: 60px; position:absolute; font-size: 200%; top: -27px; font-family: Verdana; text-shadow: 1px 1px 3px black;}
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    background-color: #FAAF42;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    z-index: -1
+}
+#current-user{position:absolute; width: 45px; height: 45px; right: 5px; top: 2px; -webkit-clip-path: circle(50% at 50% 50%); z-index: 2;
+clip-path: circle(50% at 50% 50%);}
+#username{position: absolute; right: 60px; top: 13px; z-index: 2;}
+#username:hover{position: absolute; right: 60px; top: 13px; text-decoration: underline; z-index: 2;}
+#login-button{position: absolute; right: 60px; top: 12px; width: 75px; height: 25px; z-index: 2;}
+#signup-button{position: absolute; right: 140px; top: 8px; background-color: #FAAF42; width: 75px; height: 30px; z-index: 2; border-radius: 5px;}
+#navuser{position: absolute; width: 271px; right: 0px; height: 100%}
+#navdrop{background-color: white; position: relative; height: 111px; box-shadow: 0px 0px 20px #FAAF42}
+.navdropc{visibility: hidden}
+.navuserc:hover .navdropc{visibility: visible}
+#navchoose{background-color: #FFFFFF; position: relative; top: 50px}
+#navchoose:hover{background-color: #ebebeb; position: relative; top: 50px}
+#verify-button{position: relative; background-color: #FAAF42; z-index: 2; border-radius: 5px; height: 35px; top: 7px; width: 73%; font-family: Verdana; right: -5px; font-size: 15px}
+
+/*notouch*/
+#notouch{-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none; -o-user-select:none; "unselectable="on" onselectstart="return false; "onmousedown="return false;}
+
+/*page: index */
+#sectionss{width: 100%; max-height: 500px; height: 25%; left: 0%; top: 150px; position: absolute; -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%); overflow: hidden;
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);}
+#newsholder{width: 50%; height: 1000px; left: 25%; top: 750px; position: absolute;}
+.sliderButton{position: absolute; z-index: 2; background-color: #CCCCCC; height: 50%; width: 70px; border-radius: 20px; cursor: pointer; top: 25%;}
+.buttonCenterPlace{text-align: center; height: 50%; top: 40%; position: absolute; width: 100%;}
+#rightClick{right: 0%;}
+.slideImg{min-height: 500px; min-width: 100px; bottom: -10%;}
+.descBack{position: relative; height: 200px; width: 300px; left: 10%; top: 40%; background: rgba(0, 0, 0, 0.7); z-index: 5;}
+.imgTitle{position: relative; color: white; width: 90%; height: 70%; left: 10%;}
+
+
+/*page: blog */
+.article{position: absolute; height: 250px; width: 25%; left: 10%; top: 200px;}
+.artTitle{position: relative; left: 5%; cursor: pointer;}
+.squareImg{position: relative; left: 60%; height: 170px; width: 170px;}
+.artPrev{position: relative; left: 5%; height: 65%; width: 50%; top: -200px; font-size: 20px;}
+
+/* blog specific */
+.blogPostText{font-size: 20px; text-indent: 20px;}
+.postWidth{position: absolute; left : 5%; width: 90%; height: 620px;}
+.innerText{position: relative; left: 5%; width: 90%;}
+#top1{top: 200px;}
+#testPic1{height: 200px; width: 200px; position: relative; left: 5%;}
+#pNextToPic{position: relative; left: 20%; bottom: 200px; width: 70%;}
+#textBelowImg{position: relative; bottom: 20%;}
+#pag1Siz{height: 900px;}
+
+/* 404 page */
+/*#boxof404{position: absolute; height: 40%; width: 40%; left: 30%; bottom: 30%; background-color: white; padding: 15px; margin: auto;}*/
+#boxof404{width: 800px; height: 340px; position: relative; top: 150px; background-color: white; padding: 15px; margin: auto; }
+
+/*page: Our Games */
+#slideShow{background-color: black; position: absolute; left: 30%; top: 20%; width: 40%; height: 40%;}
+.roundButton{background-color: #CCCCCC; height: 70px; width: 70px; border-radius: 20px; cursor: pointer;}
+#leftButton{position: absolute; left: -5%; top: 45%;}
+#rightButton{position: absolute; left: 95%; top: 45%;}
+.innerRB{position: relative; height: 50%; width: 100%; top: 30%; text-align: center; color: black; font-size: 25px;}
+#gamePrev{width: 100%; height: 100%;}
+
+/*Login page*/
+#submit{width: 200px; margin-top: 10px; height: 30px; background-color: #FAAF42; border-radius: 3px; border: none; transition: background-color.25s ease-in-out}
+#submit:hover{width: 200px; margin-top: 10px; height: 30px; background-color: #ae6905; border-radius: 3px; border: none; cursor: pointer; cursor: hand; transition: background-color.25s ease-in-out}
+.buttonsmall{color: #2980b9; font-family: Verdana; font-size: 15px}
+#buttonsmallid{margin-left: 5px; margin-right: 5px}
+#buttonsmallid:hover{text-decoration: underline;}
+
+/*Signup page*/
+#susubmit{width: 200px; margin-top: 10px; height: 30px; background-color: #FAAF42; border-radius: 3px; border: none; transition: background-color.25s ease-in-out}
+#susubmit:hover{width: 200px; margin-top: 10px; height: 30px; background-color: #ae6905; border-radius: 3px; border: none; cursor: pointer; cursor: hand; transition: background-color.25s ease-in-out}
+.subuttonsmall{color: #2980b9; font-family: Verdana; font-size: 15px}
+#subuttonsmallid{position: relative; top: 48px}
+#subuttonsmallid:hover{text-decoration: underline;}
