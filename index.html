@@ -10,8 +10,26 @@
 <body bgcolor="#222222" onload="slideShowMain()" onresize="slideShowMain()">
 	<div style="height: 1800px;"><!--Page Size--></div>
 	<?php require_once('users/init.php'); ?>
-	<?php require_once('includes/header.php'); ?>
-	<?php require_once('includes/nav.php'); ?>
+	<header>
+		<div id="orangeline"></div>
+		<div id="littleorangeline"></div>
+	</header>
+	  
+<nav id="notouch">
+	<div id="topbar" class="semiBlack">
+		<p id="bloxdevlogoname"><b><span style="color:#FAAF42">B</span><span style="color:#191919">lox</span><span style="color:#FAAF42">D</span><span style="color:#191919">ev</span></b></p>
+		<a class="topverd newButton" id="home" href="/index.php" style="color: #191919">Home</a>
+		<a class="topverd newButton" id="games" href="/games_page.php" style="color: #191919">Games</a>
+		<a class="topverd newButton" id="blog" href="/blog_page.php" style="color: #191919">Blog</a>
+		<a href="https://www.roblox.com/My/Groups.aspx?gid=1159104" target="_blank"><img src="/bdi.png" alt="bloxdev logo" id="littlelogo"></img></a>
+		<div id="navuser" class="navuserc">
+				<div id="navdrop" class="navdropc" style="top: 0px">
+					<div id=navchoose style="cursor: pointer;"><a class="verd" style="position: relative;"><img src='/images/extras/cog.png' style="width: 25px"></img><b>Settings</b></a><p style="position: absolute; right: 25px; top: -10px"><b>|</b></p></div>
+					<div id=navchoose onclick="location.href='/users/logout.php';" style="cursor: pointer;"><a class="verd" style="position: relative;"><img src='/images/extras/cog.png' style="width: 25px"></img><b>Logout</b></a><p style="position: absolute; right: 25px; top: -5px"><b>|</b></p></div>
+				</div>
+		</div>
+	</div>
+</nav>
 	<section>
 		<div id="sectionss" class="semiBlack">
 			<img src="images/frontpage/mine.png" class="slideImg" alt="testfrontpagepic"><div class="descBack"><h2 class="topverd imgTitle">this is the title</h2></div></img>
@@ -23,6 +41,7 @@
 		<div id="newsholder" class="semiBlack">
 		</div>
 	</section>
-	<?php require_once('includes/footer.php'); ?>
+	<footer>
+	</footer>
 </body>
 </html>
